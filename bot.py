@@ -42,7 +42,7 @@ class JsonHandler(BaseHTTPRequestHandler):
             "uptime": get_uptime(),
             "cpu": f"{psutil.cpu_percent()}%",
             "ram": f"{psutil.virtual_memory().percent}%",
-            "dev": "Adarsh"
+            "dev": "rapid"
         }
         self.wfile.write(json.dumps(data, indent=4).encode())
 
